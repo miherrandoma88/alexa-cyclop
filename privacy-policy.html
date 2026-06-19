@@ -26,9 +26,10 @@
 <h2>2. Datos que se guardan</h2>
 <p>
   La skill guarda en <strong>Amazon DynamoDB</strong> (región EU-West-1, Irlanda)
-  un identificador anónimo de usuario proporcionado por Alexa, junto con dos valores:
-  el número de sesiones iniciadas y un nivel interno de "paranoia" que afecta
-  al tono de las respuestas. No se almacena ningún texto de las conversaciones
+  un identificador anónimo de usuario proporcionado por Alexa, junto con algunos
+  valores de estado: el número de sesiones iniciadas, un nivel interno de "paranoia"
+  que afecta al tono de las respuestas, el personaje activo (Cíclope o Quásar) y sus
+  ajustes de personalidad. No se almacena ningún texto de las conversaciones
   entre sesiones.
 </p>
 
@@ -46,23 +47,34 @@
   (infraestructura de la skill).
 </p>
 
-<h2>5. Venta de datos</h2>
+<h2>5. Compras dentro de la skill</h2>
+<p>
+  Esta skill ofrece contenido premium opcional ("Protocolo Pro") mediante compra
+  dentro de la skill. Las transacciones de pago son gestionadas íntegramente por
+  <strong>Amazon</strong> a través de su sistema de compras de Alexa. El desarrollador
+  <strong>no recibe ni almacena</strong> datos de pago, números de tarjeta ni información
+  financiera. La skill solo consulta a Amazon si el usuario tiene derecho al contenido
+  comprado, para desbloquearlo. Las condiciones de compra, facturación y reembolso se
+  rigen por las políticas de Amazon y están disponibles en la aplicación Alexa.
+</p>
+
+<h2>6. Venta de datos</h2>
 <p>No se venden ni ceden datos a terceros con fines comerciales.</p>
 
-<h2>6. Menores de edad</h2>
+<h2>7. Menores de edad</h2>
 <p>
   Esta skill no está dirigida a menores de 13 años y no recoge intencionadamente
   datos de menores.
 </p>
 
-<h2>7. Tus derechos</h2>
+<h2>8. Tus derechos</h2>
 <p>
   Puedes solicitar la eliminación de tus datos en cualquier momento
   contactando con el desarrollador. Al desinstalar la skill, los datos
   asociados a tu identificador se eliminan en el siguiente ciclo de limpieza.
 </p>
 
-<h2>8. Contacto</h2>
+<h2>9. Contacto</h2>
 <p>
   Para cualquier pregunta sobre esta política, contacta con el desarrollador
   a través de la página de la skill en la Alexa Skill Store.

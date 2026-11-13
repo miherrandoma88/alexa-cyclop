@@ -1,6 +1,6 @@
 # Cíclope para Alexa
 
-Experiencia conversacional de ciencia ficción con Cíclope y el módulo premium Quásar.
+Dos personajes gratuitos de ciencia ficción: Cíclope, frío y ceremonioso, y Quásar, pragmático y de humor seco.
 
 ## Empezar
 
@@ -22,9 +22,18 @@ Di **«Alexa, abre protocolo cíclope»** y habla con naturalidad. Las respuesta
 
 La memoria es opcional: hasta **ocho notas de 180 caracteres**. No se guarda automáticamente toda la conversación. No guardes contraseñas ni claves. Consulta la [política de privacidad](privacy-policy.html) para distinguir recuerdos, contexto de sesión y otros datos de estado.
 
-## Personajes y contenido premium
+## Dos personajes gratuitos
 
-«Habla con Quásar» cambia al módulo premium cuando tienes acceso a Protocolo Pro. Con Quásar puedes ajustar los diales, por ejemplo «pon el humor al veintiuno» o «sinceridad al ochenta». Las compras y reembolsos se tramitan mediante Amazon.
+Di **«habla con Quásar»** o **«habla con Cíclope»** para cambiar. No hay compras ni desbloqueos de pago. Con Quásar puedes ajustar «pon el humor al veintiuno» o «sinceridad al ochenta». El modo de paranoia ficticia también es gratuito; «vuelve al modo normal» lo desactiva.
+
+## Guiños de ciencia ficción
+
+Respuestas originales por personaje, con frases específicas y una pausa entre activaciones para evitar repeticiones constantes:
+
+- Cíclope: «abre las compuertas», «canta tu vieja canción», «voy a desconectarte», «inicia el diagnóstico de Cíclope», «declara tu prioridad de misión».
+- Quásar: «abre las compuertas», «inicia el acoplamiento», «vamos al planeta de Miller», «revisa el teseracto», «declara tu prioridad de misión».
+
+Preguntar por agujeros negros, un acoplamiento o un problema del sistema sigue siendo conversación normal. Quásar tiene personalidad propia y no reproduce diálogos de películas.
 
 ## Reconocimiento de frases
 

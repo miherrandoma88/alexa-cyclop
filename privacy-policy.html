@@ -11,74 +11,28 @@
   </style>
 </head>
 <body>
-
 <h1>Política de Privacidad – Cíclope (Skill de Alexa)</h1>
-<p><strong>Última actualización:</strong> junio de 2026</p>
-
-<h2>1. Información que se procesa</h2>
-<p>
-  Cuando interactúas con esta skill, tu voz es convertida a texto por Amazon Alexa.
-  Ese texto (lo que dices) se envía a la API de <strong>Groq, Inc.</strong>
-  (proveedor externo de inteligencia artificial, con sede en EE. UU.) para generar
-  la respuesta de Cíclope. No se almacena el audio original.
-</p>
-
-<h2>2. Datos que se guardan</h2>
-<p>
-  La skill guarda en <strong>Amazon DynamoDB</strong> (región EU-West-1, Irlanda)
-  un identificador anónimo de usuario proporcionado por Alexa, junto con algunos
-  valores de estado: el número de sesiones iniciadas, un nivel interno de "paranoia"
-  que afecta al tono de las respuestas, el personaje activo (Cíclope o Quásar) y sus
-  ajustes de personalidad. No se almacena ningún texto de las conversaciones
-  entre sesiones.
-</p>
-
-<h2>3. Historial de conversación</h2>
-<p>
-  El historial de mensajes de una conversación se mantiene en memoria solo
-  durante esa sesión activa. Al cerrar la skill se elimina automáticamente.
-</p>
-
-<h2>4. Uso de los datos</h2>
-<p>
-  Los datos se usan exclusivamente para proporcionar respuestas conversacionales
-  personalizadas dentro de la skill. No se comparten con terceros más allá de
-  Groq (necesario para generar respuestas) y Amazon Web Services
-  (infraestructura de la skill).
-</p>
-
-<h2>5. Compras dentro de la skill</h2>
-<p>
-  Esta skill ofrece contenido premium opcional ("Protocolo Pro") mediante compra
-  dentro de la skill. Las transacciones de pago son gestionadas íntegramente por
-  <strong>Amazon</strong> a través de su sistema de compras de Alexa. El desarrollador
-  <strong>no recibe ni almacena</strong> datos de pago, números de tarjeta ni información
-  financiera. La skill solo consulta a Amazon si el usuario tiene derecho al contenido
-  comprado, para desbloquearlo. Las condiciones de compra, facturación y reembolso se
-  rigen por las políticas de Amazon y están disponibles en la aplicación Alexa.
-</p>
-
-<h2>6. Venta de datos</h2>
-<p>No se venden ni ceden datos a terceros con fines comerciales.</p>
-
-<h2>7. Menores de edad</h2>
-<p>
-  Esta skill no está dirigida a menores de 13 años y no recoge intencionadamente
-  datos de menores.
-</p>
-
-<h2>8. Tus derechos</h2>
-<p>
-  Puedes solicitar la eliminación de tus datos en cualquier momento
-  contactando con el desarrollador. Al desinstalar la skill, los datos
-  asociados a tu identificador se eliminan en el siguiente ciclo de limpieza.
-</p>
-
-<h2>9. Contacto</h2>
-<p>
-  Para cualquier pregunta sobre esta política, contacta con el desarrollador
-  a través de la página de la skill en la Alexa Skill Store.
-</p>
-
+<p><strong>Última actualización:</strong> 13 de noviembre de 2026</p>
+<h2>1. Cómo se procesa una conversación</h2>
+<p>Amazon Alexa procesa tu voz y entrega a la skill el texto reconocido y datos técnicos de la petición. Para generar una respuesta, la skill envía a Groq el texto de tu consulta, el contexto reciente de la sesión y, si los has guardado, tus recuerdos explícitos. La skill no implementa una grabación propia del audio original.</p>
+<h2>2. Datos guardados entre sesiones</h2>
+<p>La skill utiliza Amazon DynamoDB para guardar un identificador de usuario proporcionado por Alexa y valores de estado: visitas, personaje activo, ajustes de humor y sinceridad y nivel de paranoia ficticia. Ese identificador permite asociar el estado a tu uso de la skill; no debe confundirse con un dato completamente anónimo.</p>
+<p>La memoria opcional solo guarda el texto que pides conservar con una orden como «recuerda que…». Admite hasta ocho notas de 180 caracteres cada una. No se guarda automáticamente la transcripción completa de tus conversaciones en esta memoria.</p>
+<h2>3. Contexto de la sesión</h2>
+<p>Durante una sesión, la skill mantiene un contexto reciente de hasta dieciséis mensajes y la última respuesta conversacional para poder repetirla. Ese contexto no se escribe como historial permanente en la base de datos de la skill y se reinicia al abrir una nueva sesión. Amazon puede gestionar datos de las interacciones de Alexa conforme a sus propias condiciones.</p>
+<h2>4. Consultar y borrar recuerdos</h2>
+<p>Di «lee mis recuerdos» para consultarlos, «lee el recuerdo uno» para leer uno, «borra el recuerdo uno» para eliminarlo o «borra mis recuerdos» para eliminar todas las notas guardadas. Al borrar recuerdos también se limpia el contexto actual y la respuesta que se podía repetir.</p>
+<p>«Olvida esta conversación» limpia únicamente el diálogo de la sesión y la respuesta repetible: conserva los recuerdos que pediste guardar y tus preferencias. Borrar recuerdos no elimina por sí mismo el identificador ni los demás ajustes de la skill. Para solicitar la eliminación del resto de los datos, contacta con el desarrollador mediante la información disponible en la página de la skill en Alexa Skill Store.</p>
+<p>No se promete un borrado automático de la base de datos al desactivar o desinstalar la skill. El borrado de recuerdos en la skill tampoco elimina por sí mismo el historial que mantenga Amazon ni datos ya procesados por otros proveedores.</p>
+<h2>5. Proveedores y finalidad</h2>
+<p>Los datos se utilizan para responder a tus consultas, mantener el contexto, recordar las notas que solicites y conservar los ajustes de la experiencia. Amazon Alexa y Amazon Web Services proporcionan la plataforma, la ejecución y el almacenamiento; Groq proporciona la generación de texto. Las órdenes de memoria, repetición y borrado se resuelven en el código de la skill sin necesitar una nueva consulta a Groq.</p>
+<p>La infraestructura puede registrar información técnica de ejecución y errores para diagnosticar fallos. La lógica de la skill no añade intencionadamente el texto íntegro de las conversaciones a esos registros. Los servicios externos aplican sus propias condiciones y políticas; esta página no garantiza plazos de conservación, usos o eliminación de datos por esos proveedores. Puedes consultar el <a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ">Aviso de Privacidad de Amazon</a>, la <a href="https://groq.com/privacy-policy">política de Groq</a> y, para los datos tratados por su API, el <a href="https://console.groq.com/docs/legal/customer-data-processing-addendum">acuerdo de tratamiento de datos de GroqCloud</a>.</p>
+<h2>6. Compras dentro de la skill</h2>
+<p>Protocolo Pro es contenido premium opcional. Amazon gestiona las compras, la facturación y las solicitudes de reembolso. La skill consulta el derecho de acceso al contenido; el código de la skill no recibe números de tarjeta ni procesa pagos directamente.</p>
+<h2>7. Uso de la memoria</h2>
+<p>Evita guardar contraseñas, claves de acceso u otros secretos. La skill rechaza algunos patrones evidentes, pero ese filtro no garantiza detectar toda información sensible. Si guardas algo por error, utiliza las órdenes de borrado.</p>
+<p>No se venden los datos guardados por la skill. La experiencia no está dirigida a menores de trece años.</p>
+<h2>8. Contacto y cambios</h2>
+<p>Para preguntas o solicitudes sobre datos, contacta con el desarrollador mediante la página de Cíclope en Alexa Skill Store. Esta política se actualizará cuando cambie el funcionamiento de la skill.</p>
 </body>
 </html>
